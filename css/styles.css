@@ -60,11 +60,12 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 15px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -94,7 +95,7 @@ header {
     background: #ffffff;
     z-index: 1000;
     padding: 20px 0;
-    margin: 0; 
+    margin: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -166,13 +167,13 @@ section ul li img {
 }
 
 .about li li {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 1px solid #ddd; 
+    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .about a:hover {
@@ -192,14 +193,14 @@ section ul li img {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    width: 100%; 
+    width: 100%;
     box-sizing: border-box;
     transition: transform 0.3s;
     padding-top: 2%;
 }
 
 .card img {
-    width: 50%; 
+    width: 50%;
     border-bottom: 1px solid #ddd;
 }
 
@@ -260,7 +261,7 @@ footer {
     margin-top: 20px;
 }
 
-.portfolio-head{
+.portfolio-head {
     padding-top: 5%;
     text-align: center;
 }
@@ -269,20 +270,20 @@ footer {
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .hero-icons a {
     border-radius: 0%;
     display: inline-block;
-    font-size: 50px; 
+    font-size: 50px;
     padding-bottom: 5%;
-    color: #ffffff; 
+    color: #ffffff;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .hero-icons a:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .hero-icons a i {
@@ -290,5 +291,23 @@ footer {
 }
 
 .hero-icons a:hover i {
-    color: #ffffff; 
+    color: #ffffff;
+}
+
+.tryhackme-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: 5px;
+}
+
+.tryhackme-badge {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .tryhackme-container iframe {
+        transform: scale(0.9);
+        transform-origin: left top;
+    }
 }
